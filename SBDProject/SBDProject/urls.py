@@ -1,3 +1,14 @@
+from django.urls import path
+import os
+Path = r'C:/Users/vodka/Desktop/Nova pasta (3)/SBD/Projeto/LearningDjango/SBDProject/HelloDjangoApp/'
+os.chdir(Path)
+import views
+
+# Django processes URL patterns in the order they appear in the array
+urlpatterns = [
+    path(r'^$', views.index, name='index'),
+    path(r'^home$', views.index, name='home'),
+]
 """
 SBDProject URL Configuration
 
