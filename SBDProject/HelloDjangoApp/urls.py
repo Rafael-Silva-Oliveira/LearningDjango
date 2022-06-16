@@ -2,7 +2,9 @@ from django.urls import path
 from . import views
 
 urlpatterns = [
-    path('', views.index, name='home'),
+    path('', views.index, name='index'),
+    path('home', views.index, name='home'),
+    path('about', views.about, name='about')
 ]
 
 # Django processes URL patterns in the order they appear in the array

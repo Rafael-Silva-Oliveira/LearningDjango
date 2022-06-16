@@ -1,3 +1,7 @@
+{% extends "HelloDjangoApp/layout.html" %}
+{% block content %}
+<span class="message">{{ message }}</span>{{ content }}
+{% endblock %}
 <html>
 <head>
     <title>{{ title }}</title>
@@ -6,5 +10,6 @@
 </head>
 <body>
     <span class="message">{{ message }}</span>{{ content }}
+    <div><a href="about">About</a></div>
 </body>
 </html>

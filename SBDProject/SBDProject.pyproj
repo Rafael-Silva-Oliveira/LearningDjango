@@ -47,7 +47,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="HelloDjangoApp\static\site.css" />
+    <Content Include="HelloDjangoApp\templates\HelloDjangoApp\about.html" />
     <Content Include="HelloDjangoApp\templates\HelloDjangoApp\index.html" />
+    <Content Include="HelloDjangoApp\templates\HelloDjangoApp\layout.html" />
     <Content Include="HelloDjangoApp\__pycache__\views.cpython-310.pyc" />
     <Content Include="HelloDjangoApp\__pycache__\__init__.cpython-310.pyc" />
     <Content Include="requirements.txt" />

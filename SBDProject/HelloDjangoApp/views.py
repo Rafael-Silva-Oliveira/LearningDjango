@@ -16,6 +16,16 @@ def index(request):
             'content' : " on " + now.strftime("%A, %d %B, %Y at %X")
         }
     )
+
+def about(request):
+    return render(
+        request,
+        "HelloDjangoApp/about.html",
+        {
+            'title' : "About HelloDjangoApp",
+            'content' : "Example app page for Django."
+        }
+    )
 '''
 def band_listing(request): 
     bands = models.Band.objects.all()
