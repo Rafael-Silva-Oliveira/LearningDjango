@@ -42,11 +42,12 @@
     <Compile Include="SBDProject\urls.py" />
     <Compile Include="SBDProject\__init__.py" />
     <Compile Include="SBDProject\settings.py" />
-    <Compile Include="HelloDjangoApp\urls.py" />
     <Compile Include="SBDProject\wsgi.py" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="HelloDjangoApp\templates\HelloDjangoApp\index.html" />
+    <Content Include="HelloDjangoApp\__pycache__\views.cpython-310.pyc" />
+    <Content Include="HelloDjangoApp\__pycache__\__init__.cpython-310.pyc" />
     <Content Include="requirements.txt" />
   </ItemGroup>
   <ItemGroup>
@@ -54,6 +55,7 @@
     <Folder Include="HelloDjangoApp\migrations\" />
     <Folder Include="HelloDjangoApp\templates\" />
     <Folder Include="HelloDjangoApp\templates\HelloDjangoApp\" />
+    <Folder Include="HelloDjangoApp\__pycache__\" />
     <Folder Include="SBDProject\" />
   </ItemGroup>
   <ItemGroup>

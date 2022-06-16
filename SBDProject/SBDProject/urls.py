@@ -1,16 +1,12 @@
-from django.urls import path
+from django.conf.urls import url
 from HelloDjangoApp import views
-
 urlpatterns = [
-    path("", views.home, name="home"),
+    url(r'^$', views.index, name='index'),
+    url(r'^home$', views.index, name='home'),
 ]
-
 # Django processes URL patterns in the order they appear in the array
 """
-urlpatterns = [
-    path(r'^$', views.index, name='index'),
-    path(r'^home$', views.index, name='home'),
-]
+
 
 SBDProject URL Configuration
 
@@ -30,10 +26,10 @@ Including another URLconf
 """
 
 # Uncomment next two lines to enable admin:
-#from django.contrib import admin
-#from django.urls import path
+from django.contrib import admin
+from django.urls import path
 
 urlpatterns = [
     # Uncomment the next line to enable the admin:
-    #path('admin/', admin.site.urls)
+    path('admin/', admin.site.urls)
 ]
