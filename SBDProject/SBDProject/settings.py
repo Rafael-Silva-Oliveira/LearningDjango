@@ -25,7 +25,7 @@ SECRET_KEY = '893c1ab9-dd93-4751-a1ab-0cf425e075d9'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["localhost","127.0.0.1"]
+ALLOWED_HOSTS = ["localhost"]
 
 # Application references
 # https://docs.djangoproject.com/en/2.1/ref/settings/#std:setting-INSTALLED_APPS
@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'HelloDjangoApp.apps.HelloDjangoAppConfig',
 ]
 
 # Middleware framework

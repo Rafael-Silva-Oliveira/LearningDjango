@@ -35,6 +35,7 @@
     <Compile Include="HelloDjangoApp\apps.py" />
     <Compile Include="HelloDjangoApp\migrations\__init__.py" />
     <Compile Include="HelloDjangoApp\models.py" />
+    <Compile Include="HelloDjangoApp\urls.py" />
     <Compile Include="HelloDjangoApp\tests.py" />
     <Compile Include="HelloDjangoApp\views.py" />
     <Compile Include="HelloDjangoApp\__init__.py" />

@@ -1,9 +1,8 @@
-from django.urls import path, include
-from django.contrib import admin
+from django.urls import path
+from . import views
 
 urlpatterns = [
-    path("", include("HelloDjangoApp.urls")),  
-    path('admin/', admin.site.urls),
+    path('', views.index, name='home'),
 ]
 
 # Django processes URL patterns in the order they appear in the array
