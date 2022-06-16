@@ -5,6 +5,7 @@ Definition of urls for DjangoWeb.
 from datetime import datetime
 from django.urls import path
 from django.contrib import admin
+from django.conf.urls import include
 from django.contrib.auth.views import LoginView, LogoutView
 from app import forms, views
 
@@ -25,6 +26,13 @@ urlpatterns = [
              }
          ),
          name='login'),
-    path('logout/', LogoutView.as_view(next_page='/'), name='logout'),
+    path('logout/',
+        LogoutView.as_view(),
+        {
+            'template_name': 'app/loggedoff.html',
+            # 'next_page': '/',
+        },
+        name='logout'),
+    path('admin/doc/', include('django.contrib.admindocs.urls')),
     path('admin/', admin.site.urls),
 ]
