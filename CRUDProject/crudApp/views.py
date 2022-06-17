@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from django.shortcuts import redirect  # new
 from .forms import StudentForm  # new
-from .models import Student  # new
+from .models import a_student  # new
 from django.contrib import messages  # new
 # Create your views here.
 def addStudent(request):
@@ -11,14 +11,14 @@ def addStudent(request):
             fm.save()
             messages.success(request, 'Student Added Successfully')
     fm = StudentForm()
-    studata = Student.objects.all()
+    studata = a_student.objects.all()
     return render(request, 'index.html', context={'fm': fm, 'studata': studata})
 def deleteStudent(request, id):
-    Student.objects.get(pk=id).delete()
+    a_student.objects.get(pk=id).delete()
     messages.success(request, 'Student Record Deleted')
     return redirect('/')
 def edit(request, id):
-    instance = Student.objects.get(pk=id)
+    instance = a_student.objects.get(pk=id)
     if request.method == "POST":
         fm = StudentForm(request.POST, instance=instance)
         if fm.is_valid():
