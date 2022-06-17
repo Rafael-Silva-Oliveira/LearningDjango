@@ -363,3 +363,4 @@ MigrationBackup/
 FodyWeavers.xsd
 /SBDProject/env
 /DjangoWeb/env
+/CRUDProject/env
